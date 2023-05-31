@@ -1,0 +1,23 @@
+.nav{
+    /* background-color: rgb(191, 191, 191); */
+}
+
+.ul{
+    display: flex;
+    list-style:none;
+    gap: 30px;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 40px;
+}
+
+.li{
+    font-size: 1.2em;
+}
+
+.li:last-child{
+    background-color: blue;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
