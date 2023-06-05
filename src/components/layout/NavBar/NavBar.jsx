@@ -1,8 +1,11 @@
 import style from './NavBar.module.css'
- 
+import logo from "../../../assets/logo.png" 
+
+
 const NavBar = () => {
   return(
     <nav className={style.nav}>
+      <img className={style.logo} src={logo}/>
       <ul className={style.ul}>
         <a href="#home"><li className={style.li}>Inicio</li></a>
         <a href="#nosotros"><li className={style.li}>Nosotros</li></a>
