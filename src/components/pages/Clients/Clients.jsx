@@ -2,13 +2,11 @@ import style from './Clients.module.css'
  
 const Clients = () => {
   return(
-    <div className={style.clients}>
-      <h2>Nuestros clientes</h2>
-      <div classname={style.clientsContainer}>
+    <div className={style.clients} id="clientes">
+      <h2 className={style.titleSection}>Nuestros clientes</h2>
         <div className={style.client}>
 
         </div>
-      </div>
       <div>
         <h3>Todos nuestros servicios son hechos con</h3>
         <div className={style.valores}>

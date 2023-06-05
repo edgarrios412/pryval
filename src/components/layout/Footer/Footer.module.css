@@ -1,0 +1,16 @@
+.footer{
+    background-color: red;
+    width: 100vw;
+    height: 12vh;
+}
+
+.footerContent{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    gap: 30px;
+}

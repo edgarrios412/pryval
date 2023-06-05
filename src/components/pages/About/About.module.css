@@ -2,3 +2,20 @@
     width: 100%;
     height: 100vh;
 }
+
+.titleSection{
+    text-align: center;
+}
+
+.aboutContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.desc{
+    background-color: red;
+       width: 500px;
+       font-size: 1.5em;
+}

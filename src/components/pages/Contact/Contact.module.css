@@ -2,3 +2,22 @@
     width: 100%;
     height: 100vh;
 }
+
+.titleSection{
+    text-align: center;
+}
+
+.contactContainer{
+    display: flex;
+}
+
+.correos{
+    display: flex;
+    align-items: center;
+}
+
+.mapa{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+}
