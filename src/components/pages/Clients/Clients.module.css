@@ -26,3 +26,26 @@
     font-size: 3em;
     color:#05446a;
 }
+
+.titleValores{
+    text-align: center;
+    margin: 75px 0px;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    /* margin: 100px 0px; */
+}
+
+.valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgValores{
+    width: 64px;
+}

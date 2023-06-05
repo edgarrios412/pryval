@@ -10,6 +10,9 @@ import golden from "../../../assets/golden.jpg"
 import bolivar from "../../../assets/bolivar.png"
 import wom from "../../../assets/wom.png"
 import ingemec from "../../../assets/ingemec.png"
+import ecology from "../../../assets/ecology.png"
+import honesty from "../../../assets/honesty.png"
+import teamwork from "../../../assets/teamwork.png"
 import jelpit from "../../../assets/jelpit.svg"
  
 const Clients = () => {
@@ -72,11 +75,11 @@ const Clients = () => {
         </Slider>
 
       <div>
-        <h3>Todos nuestros servicios son hechos con</h3>
+        <h3 className={style.titleValores}>Todos nuestros proyectos estan hechos con</h3>
         <div className={style.valores}>
-          <div className={style.valor}>AMOR</div>
-          <div className={style.valor}>CARIÑO</div>
-          <div className={style.valor}>RESPETO</div>
+          <div className={style.valor}><img className={style.imgValores} src={honesty}></img><p>Honestidad</p></div>
+          <div className={style.valor}><img className={style.imgValores} src={teamwork}></img><p>Trabajo en equipo</p></div>
+          <div className={style.valor}><img className={style.imgValores} src={ecology}></img><p>Sustentabilidad</p></div>
         </div>
       </div>
     </div>
