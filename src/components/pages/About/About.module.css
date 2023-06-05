@@ -1,21 +1,28 @@
 .about{
     width: 100%;
     height: 100vh;
+    padding: 20px 0px;
 }
 
 .titleSection{
     text-align: center;
+    font-size: 3em;
+    color:#05446a;
 }
 
 .aboutContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .desc{
-    background-color: red;
+    /* background-color: red; */
        width: 500px;
        font-size: 1.5em;
+}
+
+.img{
+    width: 450px;
 }

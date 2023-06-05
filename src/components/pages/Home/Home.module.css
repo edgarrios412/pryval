@@ -10,3 +10,29 @@
     margin-right: 100px;
     /* background-color: red; */
 }
+
+.sloganTop{
+    color: #00b2d1;
+    font-size: 2em;
+}
+
+.sloganBottom{
+    color: #05446a;
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+.nombre{
+    margin-left: 50px;
+}
+
+.nombre1{
+    color: #05446a;
+    font-size: 6em;
+    line-height: 0;
+}
+
+.nombre2{
+    color:#09afd1;
+    font-size: 3em;
+}

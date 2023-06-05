@@ -1,11 +1,13 @@
 .projects{
     width: 100vw;
     height: fit-content;
-    /* background-color: red; */
+    padding: 20px 0px;
 }
 
 .titleSection{
     text-align: center;
+    font-size: 3em;
+    color:#05446a;
 }
 
 .projectsContainer{
@@ -20,8 +22,35 @@
 }
 
 .project{
-    background-color: red;
+    /* background-color: red; */
     width: 200px;
     height: 250px;
     margin: 0;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    display: flex;
+    margin: 10px auto;
+}
+
+.title{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.button{
+    border: 0;
+    background-color: #05446a;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    font-weight: 600;
 }
