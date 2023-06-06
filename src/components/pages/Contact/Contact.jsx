@@ -1,11 +1,18 @@
 import style from './Contact.module.css'
 import {FiMail, FiPhone} from "react-icons/fi"
 import {Element} from "react-scroll" 
+import { useForm, ValidationError } from '@formspree/react';
+import { Toaster, toast } from 'react-hot-toast';
 
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("mdovrwop");
+  if (state.succeeded) {
+      toast.success("Email enviado satisfactoriamente");
+  }
   return(
   <Element name="contactanos">
+    <Toaster></Toaster>
     <div className={style.contact} id="contactanos">
       <h2 className={style.titleSection}>Contactanos</h2>
       <div className={style.contactContainer}>
@@ -25,28 +32,28 @@ const Contact = () => {
         <FiPhone className={style.icon}/>
         </div>
         <div className={style.numbers}>
-          <h4 className={style.number}>{"(+57)"} 301 388 2960 </h4>
-          <h4 className={style.number}>{"(+57)"} 301 340 9922</h4>
+          <a className={style.noLink} target="_blank" href="https://bit.ly/3IY4PGk"><h4 className={style.number}>{"(+57)"} 301 388 2960 </h4></a>
+          <a className={style.noLink} target="_blank" href="https://bit.ly/3MQvqXe"><h4 className={style.number}>{"(+57)"} 301 340 9922</h4></a>
         </div>
         </div>
         <div className={style.mapouter}>
           <div className={style.gmap_canvas}>
-            <iframe width="100%" height="70%" id="gmap_canvas" src="https://maps.google.com/maps?q=zipaquira cra 2 numero 8 68&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=villavicencio meta calle 43 numero 51 - 28&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
         </div>
-        <div className={style.formContacto}>
+        <form onSubmit={handleSubmit} method="POST" className={style.formContacto}>
           <div className={style.divisores}>
-          <input className={style.input} placeholder="Nombre"/>
-          <input className={style.input} placeholder="Telefono"/>
+          <input className={style.input} name="nombre" placeholder="Nombre"/>
+          <input className={style.input} name="telefono" placeholder="Telefono"/>
           </div>
           <div className={style.divisores}>
-          <input className={style.input} placeholder="Correo"/>
-          <input className={style.input} placeholder="Tipo de servicio que require"/>
+          <input className={style.input} name="correo" placeholder="Correo"/>
+          <input className={style.input} name="servicio" placeholder="Tipo de servicio que require"/>
           </div>
-          <textarea className={style.inputsms} placeholder="Mensaje"/>
-          <button className={style.button}>Enviar</button>
-        </div>
+          <textarea className={style.inputsms} name="mensaje" placeholder="Mensaje"/>
+          <button type="submit" className={style.button}>Enviar</button>
+        </form>
       </div>
     </div>
     </Element>

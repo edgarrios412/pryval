@@ -25,3 +25,8 @@
 .icons{
     font-size: 2em;
 }
+
+.noLink{
+    color: white;
+    text-decoration: none;
+}

@@ -24,6 +24,7 @@
     height: 250px;
     border-radius: 50%;
     background-color: blue;
+    object-fit: cover;
 }
 
 .title{

@@ -6,9 +6,9 @@ const Footer = () => {
   return(
     <footer className={style.footer}>
       <div className={style.footerContent}>
-      <h5 className={style.createdBy}>Hecho con ☕ por Code & Coffe</h5>
+      <a className={style.noLink} href="https://www.codeandcoffee.tech" target="_blank"><h5 className={style.createdBy}>Hecho con ☕ por Code & Coffee</h5></a>
       <div className={style.redes}>
-        <div className={style.facebook}><AiOutlineWhatsApp className={style.icons} /></div>
+        <a className={style.noLink} href="https://bit.ly/3MQvqXe" target="_blank"><div className={style.facebook}><AiOutlineWhatsApp className={style.icons} /></div></a>
         <div className={style.facebook}><FiTwitter className={style.icons}/></div>
         <div className={style.facebook}><AiFillLinkedin className={style.icons}/></div>
       </div>

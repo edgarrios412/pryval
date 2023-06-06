@@ -1,6 +1,19 @@
 import style from './Modal.module.css'
+import example from "../../../assets/example.jpg"
+import Slider from 'react-slick';
  
 const ModalProject = ({close, id}) => {
+  const settings = {
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    style:{
+      margin:"0px 100px",
+    }
+  };
   return(
     <>
     {id === 1 && <div className={style.modalContainer}>
@@ -85,7 +98,11 @@ Instalación de equipos y adecuaciones eléctricas</p>
         <h2 className={style.title}>DISEÑO PARQUE SOLAR PRADERA</h2>
         <h5 className={style.cliente}>Cliente: Pendiente</h5>
         <p className={style.desc}>Pendiente</p>
-        <div>IMG</div>
+        <Slider {...settings}>
+          <img src={example}></img>
+          <img src={example}></img>
+          <img src={example}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}

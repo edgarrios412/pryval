@@ -1,5 +1,5 @@
 import style from './Projects.module.css'
-import example from "../../../assets/example.jpg" 
+import example from "../../../assets/logo.png" 
 import {Element} from "react-scroll"
 import ModalProject from '../../layout/ModalProject/ModalProject';
 import { useState } from 'react';
