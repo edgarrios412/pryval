@@ -38,8 +38,9 @@
 }
 
 .title{
-    font-size: 1.3em;
+    font-size: 1.05em;
     text-align: center;
+    /* background-color: red; */
 }
 
 .button{

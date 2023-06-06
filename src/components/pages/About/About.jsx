@@ -1,9 +1,10 @@
 import style from './About.module.css'
 import img from "../../../assets/Imagen19.png" 
-
+import {Element} from "react-scroll"
 
 const About = () => {
   return(
+    <Element name="nosotros">
     <div className={style.about} id="nosotros">
       <h2 className={style.titleSection}>Nosotros</h2>
       <div className={style.aboutContainer}>
@@ -11,6 +12,7 @@ const About = () => {
         <img src={img} className={style.img}/>
       </div>
     </div>
+      </Element>
   )
 };
 

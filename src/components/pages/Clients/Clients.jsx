@@ -14,6 +14,7 @@ import ecology from "../../../assets/ecology.png"
 import honesty from "../../../assets/honesty.png"
 import teamwork from "../../../assets/teamwork.png"
 import jelpit from "../../../assets/jelpit.svg"
+import {Element} from "react-scroll"
  
 const Clients = () => {
 
@@ -41,6 +42,7 @@ const Clients = () => {
 
 
   return(
+    <Element name="clientes">
     <div className={style.clients} id="clientes">
       <h2 className={style.titleSection}>Nuestros clientes</h2>
         <Slider key={Math.random()} {...settings}>
@@ -64,7 +66,7 @@ const Clients = () => {
         <img src={qmc} className={style.img}></img>
         </div>
         <div className={style.client}>
-        <img src={ingemec} className={style.img}></img>
+        <img style={{backgroundColor:"white"}}src={ingemec} className={style.img}></img>
         </div>
         <div className={style.client}>
         <img src={viridi} className={style.img}></img>
@@ -83,6 +85,7 @@ const Clients = () => {
         </div>
       </div>
     </div>
+    </Element>
   )
 };
 

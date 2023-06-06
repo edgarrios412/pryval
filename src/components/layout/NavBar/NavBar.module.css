@@ -1,30 +1,46 @@
 .nav{
-    /* background-color: rgb(191, 191, 191); */
+    background-color: rgba(255, 255, 255, 0.935);
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
+    height: 11vh;
+    z-index: 100;
+    width: 100%;
 }
 
 .logo{
-    width: 50px;
+    width: 60px;
+    margin-left: 75px;
 }
 
 .ul{
     display: flex;
     list-style:none;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
     justify-content: end;
     padding: 0px 40px;
 }
 
 .li{
-    font-size: 1.2em;
+    font-size: 1.25em;
+    cursor:pointer
 }
 
-.li:last-child{
-    background-color: blue;
+.libutton{
+    background-color: #05446a;
     padding: 5px 15px;
     border-radius: 5px;
     color: white;
+    font-weight: 800;
+    font-size: 1.25em;
+}
+
+.noLink{
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    color:black
 }

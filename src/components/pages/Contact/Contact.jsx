@@ -1,8 +1,11 @@
 import style from './Contact.module.css'
 import {FiMail, FiPhone} from "react-icons/fi"
- 
+import {Element} from "react-scroll" 
+
+
 const Contact = () => {
   return(
+  <Element name="contactanos">
     <div className={style.contact} id="contactanos">
       <h2 className={style.titleSection}>Contactanos</h2>
       <div className={style.contactContainer}>
@@ -46,6 +49,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </Element>
   )
 };
 
