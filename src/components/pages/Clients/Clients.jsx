@@ -29,16 +29,16 @@ const Clients = () => {
       margin:"0px 100px",
     }
   };
-  // if("h".length > 2){
-  //   settings.infinite = true;
-  // }
-  // if (window.innerWidth < 850) {
-  //   settings.slidesToShow = 1;
-  // } else if (window.innerWidth < 1200) {
-  //   settings.slidesToShow = 2;
-  // } else if (window.innerWidth > 1200) {
-  //   settings.slidesToShow = 3;
-  // }
+  if (window.innerWidth < 550) {
+    settings.slidesToShow = 1;
+  }
+  else if (window.innerWidth < 750) {
+    settings.slidesToShow = 2;
+  } else if (window.innerWidth < 1200) {
+    settings.slidesToShow = 3;
+  } else if (window.innerWidth > 1200) {
+    settings.slidesToShow = 4;
+  }
 
 
   return(

@@ -3,6 +3,7 @@ import example from "../../../assets/logo.png"
 import {Element} from "react-scroll"
 import ModalProject from '../../layout/ModalProject/ModalProject';
 import { useState } from 'react';
+import ariporo from "../../../assets/ariporo.jpg"
 
 const Projects = () => {
   const [projectId, setProjectId] = useState(null)
@@ -24,7 +25,7 @@ const Projects = () => {
         <button className={style.button} onClick ={() => setProjectId(2)}>Mas informacion</button>
         </div>
         <div className={style.project}>
-        <img src={example} className={style.img}/>
+        <img src={ariporo} className={style.img}/>
         <h3 className={style.title}>MONOPOLO DE PAZ DE ARIPORO</h3>
         <button className={style.button} onClick ={() => setProjectId(3)}>Mas informacion</button>
         </div>

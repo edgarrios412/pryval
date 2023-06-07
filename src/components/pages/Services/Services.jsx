@@ -30,7 +30,7 @@ const Services = () => {
     <Element name="servicios">
     <div className={style.services} id="servicios">
       <h2 className={style.titleSection}>Nuestros servicios</h2>
-      <Slider {...settings}>
+      <div className={style.servicesContainer}>
         <div className={style.service}>
           <img src="https://dm.henkel-dam.com/is/image/henkel/telecommunication-tower-shutterstock" className={style.img}/>
           <h3 className={style.title}>Infraestructura de Telecomunicaciones</h3>
@@ -61,7 +61,7 @@ const Services = () => {
           <h3 className={style.title}>Diseños Estructurales y Eléctricos</h3>
           <button className={style.button} onClick={() => setServiceId(6)}>Mas informacion</button>
         </div>
-        </Slider>
+        </div>
     </div>
     </Element>
     </>

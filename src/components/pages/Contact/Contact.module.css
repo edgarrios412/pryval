@@ -1,6 +1,7 @@
 .contact{
     width: 100%;
-    height: 85vh;
+    height: fit-content;
+    padding-bottom: 50px;
 }
 
 .titleSection{
@@ -109,4 +110,24 @@
     background:none!important;
     height:100%;
     width:100%;
+}
+
+@media screen and (max-width:550px) {
+    .divisores{
+        flex-direction: column;
+    }
+    .formContacto{
+        width: fit-content;
+    }
+    .inputsms{
+        width: 100%;
+    }
+}
+@media screen and (max-width:850px) {
+    .contactContainer{
+        flex-direction: column-reverse;
+    }
+    .formContacto{
+        margin-bottom: 30px;
+    }
 }

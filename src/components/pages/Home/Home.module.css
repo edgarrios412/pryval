@@ -1,5 +1,5 @@
 .home{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url("../../../assets/marca.jpg");
     background-repeat: no-repeat;
@@ -40,4 +40,26 @@
 .nombre2{
     color:#09afd1;
     font-size: 3em;
+}
+
+@media screen and (max-width:900px){
+    .home{
+        background-position: 300px 0px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .home{
+        background-position: 150px 0px;
+    }
+    .nombre1{
+        font-size: 4.5em;
+    }
+    .nombre2{
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .sloganBottom, .sloganTop{
+        font-size: 1.4em;
+    }
 }

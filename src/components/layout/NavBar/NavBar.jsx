@@ -6,7 +6,7 @@ import {Link} from "react-scroll"
 const NavBar = () => {
   return(
     <nav className={style.nav}>
-      <img className={style.logo} src={logo}/>
+      <Link to="home" smooth={true} duration={500}><img className={style.logo} src={logo}/></Link>
       <ul className={style.ul}>
       <Link to="home" smooth={true} duration={500}><li className={style.li}>Inicio</li></Link>
         <Link to="nosotros" smooth={true} duration={500}><li className={style.li}>Nosotros</li></Link>

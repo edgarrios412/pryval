@@ -30,3 +30,15 @@
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width:500px) {
+    .footerContent{
+        flex-direction: column-reverse;
+    }
+    .footer{
+        height: fit-content;
+    }
+    .redes{
+        margin-top: 25px;
+    }
+}

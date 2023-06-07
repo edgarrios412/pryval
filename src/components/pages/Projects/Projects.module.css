@@ -29,9 +29,10 @@
 }
 
 .img{
-    width: 100px;
-    height: 80px;
-    /* border-radius: 50%; */
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
     /* background-color: blue; */
     display: flex;
     margin: 10px auto;
