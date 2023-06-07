@@ -28,7 +28,7 @@ const Clients = () => {
     style:{
       margin:"0px 100px",
     }
-  };
+  }
   if (window.innerWidth < 550) {
     settings.slidesToShow = 1;
   }
