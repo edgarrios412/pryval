@@ -35,7 +35,7 @@
         flex-direction: column;
     }
     .desc{
-        width: 350px;
+        width: 80vw;
         text-align: justify;
     }
     .img{

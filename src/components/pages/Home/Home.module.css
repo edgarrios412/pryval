@@ -42,9 +42,28 @@
     font-size: 3em;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:600px){
     .home{
         background-position: 300px 0px;
+    }
+    .nombre{
+        padding: 0;
+        padding-top: 175px;
+        margin-bottom: 50px;
+    }
+    .nombre1{
+        width: 100%;
+        text-align: center;
+    }
+    .nombre2{
+        text-align: center;
+        width: 100%;
+    }
+    .slogan{
+        margin: 0;
+        text-align: center;
+        align-items: normal;
+        margin: 0 auto;
     }
 }
 

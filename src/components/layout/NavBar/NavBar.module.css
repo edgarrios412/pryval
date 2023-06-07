@@ -46,7 +46,14 @@
 }
 
 @media screen and (max-width: 900px){
-    .ul{
+    .li{
         display: none;
+    }
+    .ul{
+        gap: 0;
+    }
+    .logo{
+        width: 50px;
+        margin-left: 40px;
     }
 }
