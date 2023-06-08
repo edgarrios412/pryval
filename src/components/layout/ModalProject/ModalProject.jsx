@@ -41,7 +41,7 @@ const ModalProject = ({close, id}) => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     style:{
-      margin:"0px 100px",
+      margin:"0px 50px",
     }
   };
   return(
@@ -53,11 +53,11 @@ const ModalProject = ({close, id}) => {
         <p className={style.desc}>Construcción de la estación para la Torre Triangular de 60m, Cimentación, Montaje y Pintura de Torre, Sistema de puesta a tierra, Cosite, Cerramiento en malla eslabonada de 18x12m, acabado final, Muro de contención, Estabilización de taludes Norte y laterales, Cunetas. 
         <br></br>Ubicación: El Castillo - Meta</p>
         <Slider {...settings}>
-          <img src={c1}></img>
-          <img src={c2}></img>
-          <img src={c3}></img>
-          <img src={c4}></img>
-          <img src={c5}></img>
+          <div className={style.imgContainer}><img className={style.imgC} src={c1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={c2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={c3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={c4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={c5}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
@@ -69,12 +69,12 @@ const ModalProject = ({close, id}) => {
         <p className={style.desc}>Ejecución de obra civil y eléctrica para un mástil de 4m doble anillo anclado e impermeabilizado en terraza de edificación de 4 pisos, con las instalaciones reglamentarias para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras (SPT), cambio de gabinete a 6 cuentas y su respectivo cerramiento de 3.00m x 3.00m en malla eslabonada y postes galvanizados.
         <br></br>Ubicación: Soacha - Cundinamarca</p>
         <Slider {...settings}>
-        <img src={t6}></img>
-          <img src={t1}></img>
-          <img src={t2}></img>
-          <img src={t3}></img>
-          <img src={t4}></img>
-          <img src={t5}></img>
+        <div className={style.imgContainer}><img className={style.imgC} src={t6}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={t1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={t2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={t3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={t4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={t5}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
@@ -86,11 +86,11 @@ const ModalProject = ({close, id}) => {
         <p className={style.desc}>Ejecución de obra civil y eléctrica para monopolo de 21m, comenzando por la cimentación de acuerdo al diseño estructural y de suelos, izaje y ensamblaje del monopolo mediante grúa, instalaciones respectivas para recorrido de acometida y fibra óptica, sistema de puesta a tierras, cerramiento de 3.00m x 3.00m en malla eslabonada con concertina. La estructura está pintada con los colores y franjas reglamentarias de naranja y blanco exigidos por la Fuerza Aérea.
         <br></br>Ubicación: Paz de Ariporo - Casanare</p>
         <Slider {...settings}>
-          <img src={a1}></img>
-          <img src={a2}></img>
-          <img src={a3}></img>
-          <img src={a4}></img>
-          <img src={a5}></img>
+          <div className={style.imgContainer}><img className={style.imgC} src={a1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={a2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={a3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={a4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={a5}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
@@ -115,11 +115,11 @@ JGVR Simón Bolívar C 195m por línea, instalación de postes y transformador
 
 <br></br>Ubicación: San José del Guaviare - Guaviare</p>
 <Slider {...settings}>
-          <img src={g1}></img>
-          <img src={g2}></img>
-          <img src={g3}></img>
-          <img src={g4}></img>
-          <img src={g5}></img>
+          <div className={style.imgContainer}><img className={style.imgC} src={g1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={g2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={g3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={g4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={g5}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
@@ -144,11 +144,11 @@ Cambio de luminarias en letreros de estantes
 Mantenimiento de puerta de acceso
 Instalación de equipos y adecuaciones eléctricas</p>
 <Slider {...settings}>
-          <img src={ca1}></img>
-          {/* <img src={ca2}></img> */}
-          <img src={ca3}></img>
-          <img src={ca4}></img>
-          <img src={ca5}></img>
+          <div className={style.imgContainer}><img className={style.imgC} src={ca1}></img></div>
+          {/* <div className={style.imgContainer}><img className={style.imgC} src={ca2}></img> */}
+          <div className={style.imgContainer}><img className={style.imgC} src={ca3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={ca4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={ca5}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
