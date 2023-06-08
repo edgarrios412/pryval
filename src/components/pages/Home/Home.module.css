@@ -2,7 +2,7 @@
     width: 100vw;
     height: 110vh;
     /* background-image: url("../../../assets/marca.jpg"); */
-    background-color: rgba(0, 0, 0, 0.754);
+    background-color: rgba(0, 0, 0, 0.372);
     background-repeat: no-repeat;
     background-position: 600px 0px;
     background-size: 37em;
@@ -50,9 +50,9 @@
 }
 
 .video{
-    width: 100vw;
+    /* width: 100vw; */
+    /* height: 110vh; */
     height: 110vh;
-    /* height: 100%; */
     position: absolute;
     z-index: -2;
 }
