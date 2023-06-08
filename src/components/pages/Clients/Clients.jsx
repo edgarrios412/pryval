@@ -15,8 +15,34 @@ import honesty from "../../../assets/honesty.png"
 import teamwork from "../../../assets/teamwork.png"
 import jelpit from "../../../assets/jelpit.svg"
 import {Element} from "react-scroll"
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
+import { useEffect } from 'react';
  
 const Clients = () => {
+
+  const {ref, inView} = useInView({
+    threshold:0.05
+  })
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        opacity:1,
+        transition:{
+          type: "spring",
+          duration:1,
+          bounce:0.3
+        }
+      })
+    }else{
+      animation.start({
+        opacity:0
+      })
+    }
+  },[inView])
+
 
   const settings = {
     infinite: true,
@@ -43,7 +69,7 @@ const Clients = () => {
 
   return(
     <Element name="clientes">
-    <div className={style.clients} id="clientes">
+    <motion.div animate={animation} ref={ref} className={style.clients} id="clientes">
       <h2 className={style.titleSection}>Nuestros clientes</h2>
         <Slider key={Math.random()} {...settings}>
         <div className={style.client}>
@@ -84,7 +110,7 @@ const Clients = () => {
           <div className={style.valor}><img className={style.imgValores} src={ecology}></img><p>Sustentabilidad</p></div>
         </div>
       </div>
-    </div>
+    </motion.div>
     </Element>
   )
 };

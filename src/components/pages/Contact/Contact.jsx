@@ -3,6 +3,9 @@ import {FiMail, FiPhone} from "react-icons/fi"
 import {Element} from "react-scroll" 
 import { useForm, ValidationError } from '@formspree/react';
 import { Toaster, toast } from 'react-hot-toast';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation,motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 
 const Contact = () => {
@@ -10,10 +13,33 @@ const Contact = () => {
   if (state.succeeded) {
       toast.success("Email enviado satisfactoriamente");
   }
+
+  const {ref, inView} = useInView({
+    // threshold:0.1
+  })
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        opacity:1,
+        transition:{
+          type: "spring",
+          duration:1,
+          bounce:0.3
+        }
+      })
+    }else{
+      animation.start({
+        opacity:0
+      })
+    }
+  },[inView])
+
   return(
   <Element name="contactanos">
     <Toaster></Toaster>
-    <div className={style.contact} id="contactanos">
+    <motion.div ref={ref} animate={animation} className={style.contact} id="contactanos">
       <h2 className={style.titleSection}>Contactanos</h2>
       <div className={style.contactContainer}>
         <div className={style.infoContacto}>
@@ -55,7 +81,7 @@ const Contact = () => {
           <button type="submit" className={style.button}>Enviar</button>
         </form>
       </div>
-    </div>
+    </motion.div>
     </Element>
   )
 };

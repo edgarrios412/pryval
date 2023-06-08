@@ -1,11 +1,12 @@
 .home{
     width: 100vw;
-    height: 110vh;
-    /* background-image: url("../../../assets/marca.jpg"); */
-    background-color: rgba(0, 0, 0, 0.372);
+    height: 100vh;
+    background-image: url("../../../assets/marca.jpg");
+    /* background-color: rgba(30, 30, 30, 0.595); */
     background-repeat: no-repeat;
     background-position: 600px 0px;
     background-size: 37em;
+    overflow-x: hidden;
 }
 
 .slogan{
@@ -38,7 +39,7 @@
     opacity: 0;
     font-family: "trebuchet-ms-2";
     animation: aparecer .75s .2s ease-in-out forwards;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    /* -webkit-text-stroke: 2px rgb(255, 255, 255); */
 }
 
 .nombre2{

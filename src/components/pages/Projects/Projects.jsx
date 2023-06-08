@@ -8,14 +8,38 @@ import castillo from "../../../assets/castillo/5.jpeg"
 import cafam from "../../../assets/cafam/5.jpeg"
 import guaviare from "../../../assets/guaviare/2.jpeg"
 import terraza from "../../../assets/terraza/6.jpeg"
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion} from 'framer-motion';
+import { useEffect } from 'react';
 
 const Projects = () => {
   const [projectId, setProjectId] = useState(null)
+  const {ref, inView} = useInView({
+    threshold:0.05
+  })
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        opacity:1,
+        transition:{
+          type: "spring",
+          duration:1,
+          bounce:0.3
+        }
+      })
+    }else{
+      animation.start({
+        opacity:0
+      })
+    }
+  },[inView])
   return(
     <>
     { projectId && <ModalProject id={projectId} close={() => setProjectId(null)}/>}
     <Element name="proyectos">
-    <div className={style.projects} id="proyectos">
+    <motion.div ref={ref} animate={animation} className={style.projects} id="proyectos">
       <h2 className={style.titleSection}>Nuestros proyectos</h2>
       <div className={style.projectsContainer}>
         <div className={style.project}>
@@ -54,7 +78,7 @@ const Projects = () => {
         <button className={style.button} onClick ={() => setProjectId(7)}>Mas informacion</button>
         </div>
       </div>
-    </div>
+    </motion.div>
     </Element>
     </>
   )

@@ -6,6 +6,9 @@ import example from "../../../assets/example.jpg"
 import {Element} from "react-scroll"
 import { useState } from 'react';
 import Modal from '../../layout/Modal/Modal';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation,motion } from 'framer-motion';
+import { useEffect } from 'react';
  
 const Services = () => {
 
@@ -23,12 +26,33 @@ const Services = () => {
       margin:"0px 100px",
     }
   };
+  const {ref, inView} = useInView({
+    threshold:0.05
+  })
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        opacity:1,
+        transition:{
+          type: "spring",
+          duration:1,
+          bounce:0.3
+        }
+      })
+    }else{
+      animation.start({
+        opacity:0
+      })
+    }
+  },[inView])
 
   return(
     <>
     { serviceId && <Modal id={serviceId} close={() => setServiceId(null)}/>}
     <Element name="servicios">
-    <div className={style.services} id="servicios">
+    <motion.div animate={animation} ref={ref} className={style.services} id="servicios">
       <h2 className={style.titleSection}>Nuestros servicios</h2>
       <div className={style.servicesContainer}>
         <div className={style.service}>
@@ -62,7 +86,7 @@ const Services = () => {
           <button className={style.button} onClick={() => setServiceId(6)}>Mas informacion</button>
         </div>
         </div>
-    </div>
+    </motion.div>
     </Element>
     </>
   )
