@@ -1,7 +1,8 @@
 .home{
     width: 100vw;
-    height: 100vh;
-    background-image: url("../../../assets/marca.jpg");
+    height: 110vh;
+    /* background-image: url("../../../assets/marca.jpg"); */
+    background-color: rgba(0, 0, 0, 0.754);
     background-repeat: no-repeat;
     background-position: 600px 0px;
     background-size: 37em;
@@ -34,12 +35,40 @@
     color: #05446a;
     font-size: 6em;
     line-height: 0;
-    font-family: "trebuchet-ms-2"
+    opacity: 0;
+    font-family: "trebuchet-ms-2";
+    animation: aparecer .75s .2s ease-in-out forwards;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
 .nombre2{
     color:#09afd1;
     font-size: 3em;
+    opacity: 0;
+    animation: aparecer .75s .5s ease-in-out forwards;
+    /* -webkit-text-stroke: .1px rgb(9, 9, 9); */
+}
+
+.video{
+    width: 100vw;
+    height: 110vh;
+    /* height: 100%; */
+    position: absolute;
+    z-index: -2;
+}
+.pantalla{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgba(127, 255, 212, 0.476);
+    /* height: 100%; */
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes aparecer {
+    100%{
+        opacity:1
+    }
 }
 
 @media screen and (max-width:600px){

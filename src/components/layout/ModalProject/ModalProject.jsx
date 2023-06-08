@@ -1,6 +1,36 @@
 import style from './Modal.module.css'
 import example from "../../../assets/example.jpg"
 import Slider from 'react-slick';
+import c1 from "../../../assets/castillo/1.jpeg"
+import c2 from "../../../assets/castillo/2.jpeg"
+import c3 from "../../../assets/castillo/3.jpeg"
+import c4 from "../../../assets/castillo/12.jpeg"
+import c5 from "../../../assets/castillo/5.jpeg"
+
+import ca1 from "../../../assets/cafam/1.jpeg"
+import ca2 from "../../../assets/cafam/2.jpeg"
+import ca3 from "../../../assets/cafam/3.jpeg"
+import ca4 from "../../../assets/cafam/4.jpeg"
+import ca5 from "../../../assets/cafam/5.jpeg"
+
+import a1 from "../../../assets/ariporo/1.jpg"
+import a2 from "../../../assets/ariporo/2.jpg"
+import a3 from "../../../assets/ariporo/3.jpg"
+import a4 from "../../../assets/ariporo/4.jpg"
+import a5 from "../../../assets/ariporo/5.jpg"
+
+import g1 from "../../../assets/guaviare/1.jpeg"
+import g2 from "../../../assets/guaviare/2.jpeg"
+import g3 from "../../../assets/guaviare/3.jpeg"
+import g4 from "../../../assets/guaviare/4.jpeg"
+import g5 from "../../../assets/guaviare/5.jpeg"
+
+import t1 from "../../../assets/terraza/1.jpeg"
+import t2 from "../../../assets/terraza/2.jpeg"
+import t3 from "../../../assets/terraza/3.jpeg"
+import t4 from "../../../assets/terraza/4.jpeg"
+import t5 from "../../../assets/terraza/5.jpeg"
+import t6 from "../../../assets/terraza/6.jpeg"
  
 const ModalProject = ({close, id}) => {
   const settings = {
@@ -22,7 +52,13 @@ const ModalProject = ({close, id}) => {
         <h5 className={style.cliente}>Cliente: JCP - TIGO</h5>
         <p className={style.desc}>Construcción de la estación para la Torre Triangular de 60m, Cimentación, Montaje y Pintura de Torre, Sistema de puesta a tierra, Cosite, Cerramiento en malla eslabonada de 18x12m, acabado final, Muro de contención, Estabilización de taludes Norte y laterales, Cunetas. 
         <br></br>Ubicación: El Castillo - Meta</p>
-        <div>IMG</div>
+        <Slider {...settings}>
+          <img src={c1}></img>
+          <img src={c2}></img>
+          <img src={c3}></img>
+          <img src={c4}></img>
+          <img src={c5}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -32,7 +68,14 @@ const ModalProject = ({close, id}) => {
         <h5 className={style.cliente}>Cliente: WOM</h5>
         <p className={style.desc}>Ejecución de obra civil y eléctrica para un mástil de 4m doble anillo anclado e impermeabilizado en terraza de edificación de 4 pisos, con las instalaciones reglamentarias para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras (SPT), cambio de gabinete a 6 cuentas y su respectivo cerramiento de 3.00m x 3.00m en malla eslabonada y postes galvanizados.
         <br></br>Ubicación: Soacha - Cundinamarca</p>
-        <div>IMG</div>
+        <Slider {...settings}>
+        <img src={t6}></img>
+          <img src={t1}></img>
+          <img src={t2}></img>
+          <img src={t3}></img>
+          <img src={t4}></img>
+          <img src={t5}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -42,7 +85,13 @@ const ModalProject = ({close, id}) => {
         <h5 className={style.cliente}>Cliente: WOM</h5>
         <p className={style.desc}>Ejecución de obra civil y eléctrica para monopolo de 21m, comenzando por la cimentación de acuerdo al diseño estructural y de suelos, izaje y ensamblaje del monopolo mediante grúa, instalaciones respectivas para recorrido de acometida y fibra óptica, sistema de puesta a tierras, cerramiento de 3.00m x 3.00m en malla eslabonada con concertina. La estructura está pintada con los colores y franjas reglamentarias de naranja y blanco exigidos por la Fuerza Aérea.
         <br></br>Ubicación: Paz de Ariporo - Casanare</p>
-        <div>IMG</div>
+        <Slider {...settings}>
+          <img src={a1}></img>
+          <img src={a2}></img>
+          <img src={a3}></img>
+          <img src={a4}></img>
+          <img src={a5}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -51,7 +100,6 @@ const ModalProject = ({close, id}) => {
         <h2 className={style.title}>REFUERZO DE CIMENTACION Y TORRE</h2>
         <h5 className={style.cliente}>Cliente: Claro</h5>
         <p className={style.desc}>Sin descripcion</p>
-        <div>IMG</div>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -66,7 +114,13 @@ JGVR Simón Bolívar B 84m por línea, instalación de postes y transformador
 JGVR Simón Bolívar C 195m por línea, instalación de postes y transformador
 
 <br></br>Ubicación: San José del Guaviare - Guaviare</p>
-        <div>IMG</div>
+<Slider {...settings}>
+          <img src={g1}></img>
+          <img src={g2}></img>
+          <img src={g3}></img>
+          <img src={g4}></img>
+          <img src={g5}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -89,7 +143,13 @@ Cafam Surtimayorista:
 Cambio de luminarias en letreros de estantes
 Mantenimiento de puerta de acceso
 Instalación de equipos y adecuaciones eléctricas</p>
-        <div>IMG</div>
+<Slider {...settings}>
+          <img src={ca1}></img>
+          {/* <img src={ca2}></img> */}
+          <img src={ca3}></img>
+          <img src={ca4}></img>
+          <img src={ca5}></img>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
@@ -98,11 +158,6 @@ Instalación de equipos y adecuaciones eléctricas</p>
         <h2 className={style.title}>DISEÑO PARQUE SOLAR PRADERA</h2>
         <h5 className={style.cliente}>Cliente: Pendiente</h5>
         <p className={style.desc}>Pendiente</p>
-        <Slider {...settings}>
-          <img src={example}></img>
-          <img src={example}></img>
-          <img src={example}></img>
-        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}

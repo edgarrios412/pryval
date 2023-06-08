@@ -43,7 +43,7 @@ const Modal = ({close, id}) => {
         <h2 className={style.title}>Energías Renovables</h2>
         <p>•	Diseño e instalación de sistemas solares fotovoltaicos: residenciales e industriales.<br></br>
 •	Desarrollo de ingeniería conceptual, básica y de detalle para granjas de generación solar fotovoltaicas.<br></br>
-•	Construcción e implementación de sistemas híbridos {"(solar-generador Diesel)"}.<br></br>
+•	Construcción e implementación de sistemas híbridos {"(solar-generador diesel)"}.<br></br>
 </p>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>

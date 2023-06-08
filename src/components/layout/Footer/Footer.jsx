@@ -9,8 +9,7 @@ const Footer = () => {
       <a className={style.noLink} href="https://www.codeandcoffee.tech" target="_blank"><h5 className={style.createdBy}>Hecho con ☕ por Code & Coffee</h5></a>
       <div className={style.redes}>
         <a className={style.noLink} href="https://bit.ly/3MQvqXe" target="_blank"><div className={style.facebook}><AiOutlineWhatsApp className={style.icons} /></div></a>
-        <div className={style.facebook}><FiTwitter className={style.icons}/></div>
-        <div className={style.facebook}><AiFillLinkedin className={style.icons}/></div>
+        <a className={style.noLink} href="https://www.linkedin.com/company/pryval-ingenieria-sas/" target="_blank"><div className={style.facebook}><AiFillLinkedin className={style.icons}/></div></a>
       </div>
       </div>
     </footer>
