@@ -80,7 +80,7 @@ const Clients = () => {
 
         </div>
         <div className={style.client}>
-        <img style={{backgroundColor:"#2e0063"}} src={jelpit} className={style.img}></img>
+        <img style={{backgroundColor:"#2e0063", border:"5px solid #2e0063"}} src={jelpit} className={style.img}></img>
         </div>
         <div className={style.client}>
         <img src={cafam} className={style.img}></img>

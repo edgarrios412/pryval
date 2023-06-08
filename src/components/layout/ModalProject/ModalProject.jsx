@@ -41,7 +41,7 @@ const ModalProject = ({close, id}) => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     style:{
-      margin:"0px 50px",
+      margin:"15px 50px",
     }
   };
   return(

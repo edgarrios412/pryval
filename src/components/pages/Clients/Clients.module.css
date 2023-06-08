@@ -22,6 +22,15 @@
     background-color: black;
 }
 
+.imgjelpit{
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    height: 100%;
+    /* border-radius: 50%; */
+    background-color: black;
+}
+
 .imgviridi{
     display: flex;
     margin: 0 auto;
