@@ -1,12 +1,15 @@
 import style from './Home.module.css'
 import {Element} from "react-scroll" 
-import video from "../../../assets/video.webm"
+import fondo from "../../../assets/fondo.jpg"
 
 const Home = () => {
   return(
     <Element name="home">
     <div className={style.home} id="home">
-      {/* <div className={style.pantalla}></div> */}
+      <div className={style.pantalla}>
+        <div className={style.degradado}></div>
+        <img className={style.imgfondo}src={fondo}/>
+      </div>
     {/* <video autoPlay muted loop className={style.video} src={video}/> */}
       <div className={style.nombre}>
         <h1 className={style.nombre1}>PRYVAL</h1>

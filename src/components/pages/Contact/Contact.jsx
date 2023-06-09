@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
         <div className={style.mapouter}>
           <div className={style.gmap_canvas}>
-          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=villavicencio meta calle 43 numero 51 - 28&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Calle 42 numero 5118 Villavicencio&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
         </div>
