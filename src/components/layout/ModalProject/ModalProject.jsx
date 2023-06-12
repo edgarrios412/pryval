@@ -39,6 +39,11 @@ import r4 from "../../../assets/refuerzo/4.jpeg"
 import r5 from "../../../assets/refuerzo/5.jpeg"
 import r6 from "../../../assets/refuerzo/6.jpeg"
 import r7 from "../../../assets/refuerzo/6.jpeg"
+
+import s1 from "../../../assets/solar/s1.jpeg"
+import s2 from "../../../assets/solar/s2.jpeg"
+import s3 from "../../../assets/solar/s3.jpeg"
+import s4 from "../../../assets/solar/s4.jpeg"
  
 const ModalProject = ({close, id}) => {
   const settings = {
@@ -176,6 +181,12 @@ Instalación de equipos y adecuaciones eléctricas</p>
         <h2 className={style.title}>DISEÑO PARQUE SOLAR PRADERA</h2>
         {/* <h5 className={style.cliente}>Cliente: Pendiente</h5> */}
         <p className={style.desc}>Se realizó el diseño de ingeniería básica del parque solar Pradera ubicado en el municipio de Barrancabermeja – Santander, con una capacidad de generación de energía renovable de 40 MW en un área de 150 ha, adicional a esto, se realizó el diseño de la subestación de llegada y salida junto con la línea de transmisión de una longitud de 9.5 km.</p>
+        <Slider {...settings}>
+          <div className={style.imgContainer}><img className={style.imgC} src={s1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={s2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={s3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={s4}></img></div>
+        </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
