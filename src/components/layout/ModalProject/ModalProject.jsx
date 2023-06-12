@@ -109,7 +109,6 @@ const ModalProject = ({close, id}) => {
         <h5 className={style.cliente}>Cliente: Claro</h5>
         <p className={style.desc}>Se realiza refuerzo de zapatas y pedestales para una torre de 60 m de altura, mediante encamisado de cimentación con anclajes epóxicos (Anchorfix 4 SIKA®️) y adherencia de concreto viejo – nuevo (Sikadur 32 SIKA®️).
 Se realiza instalación de montantes de refuerzo con taburetes y cambio de diagonales hasta 45 m de altura perforando la estructura con taladro magnético, se ejecutó soldadura de cartabones para refuerzo.</p>
-        <button className={style.button} onClick={close}>Cerrar</button>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={r1}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={r2}></img></div>
@@ -119,6 +118,7 @@ Se realiza instalación de montantes de refuerzo con taburetes y cambio de diago
           <div className={style.imgContainer}><img className={style.imgC} src={r6}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={r7}></img></div>
         </Slider>
+        <button className={style.button} onClick={close}>Cerrar</button>
       </div>
     </div>}
     {id === 5 && <div className={style.modalContainer}>
