@@ -43,40 +43,40 @@ const Projects = () => {
     <motion.div ref={ref} animate={animation} className={style.projects} id="proyectos">
       <h2 className={style.titleSection}>Nuestros proyectos</h2>
       <div className={style.projectsContainer}>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(1)} className={style.project}>
         <img src={castillo} className={style.img}/>
         <h3 className={style.title}>TORRE AUTOSOPORTADA DE 60 M</h3>
-        <button className={style.button} onClick ={() => setProjectId(1)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(2)} className={style.project}>
         <img src={terraza} className={style.img}/>
         <h3 className={style.title}>ROOFTOP CON MÁSTIL DE 4 M</h3>
         <button className={style.button} onClick ={() => setProjectId(2)}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(3)} className={style.project}>
         <img src={ariporo} className={style.img}/>
         <h3 className={style.title}>MONOPOLO 21 M</h3>
-        <button className={style.button} onClick ={() => setProjectId(3)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(4)} className={style.project}>
         <img src={refuerzo} className={style.img}/>
         <h3 className={style.title}>REFUERZO DE CIMENTACION Y TORRE</h3>
-        <button className={style.button} onClick ={() => setProjectId(4)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(5)} className={style.project}>
         <img src={guaviare} className={style.img}/>
         <h3 className={style.title}>CONSTRUCCIÓN DE REDES DE M.T.</h3>
-        <button className={style.button} onClick ={() => setProjectId(5)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(6)} className={style.project}>
         <img src={cafam} className={style.img}/>
         <h3 className={style.title}>MANTENIMIENTOS CAFAM</h3>
-        <button className={style.button} onClick ={() => setProjectId(6)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
-        <div className={style.project}>
+        <div onClick ={() => setProjectId(7)} className={style.project}>
         <img src={example} className={style.img}/>
         <h3 className={style.title}>DISEÑO PARQUE SOLAR PRADERA</h3>
-        <button className={style.button} onClick ={() => setProjectId(7)}>Más información</button>
+        <button className={style.button}>Más información</button>
         </div>
       </div>
     </motion.div>
