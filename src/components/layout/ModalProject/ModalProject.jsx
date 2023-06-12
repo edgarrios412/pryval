@@ -31,6 +31,14 @@ import t3 from "../../../assets/terraza/3.jpeg"
 import t4 from "../../../assets/terraza/4.jpeg"
 import t5 from "../../../assets/terraza/5.jpeg"
 import t6 from "../../../assets/terraza/6.jpeg"
+
+import r1 from "../../../assets/refuerzo/1.jpeg"
+import r2 from "../../../assets/refuerzo/2.jpeg"
+import r3 from "../../../assets/refuerzo/3.jpeg"
+import r4 from "../../../assets/refuerzo/4.jpeg"
+import r5 from "../../../assets/refuerzo/5.jpeg"
+import r6 from "../../../assets/refuerzo/6.jpeg"
+import r7 from "../../../assets/refuerzo/6.jpeg"
  
 const ModalProject = ({close, id}) => {
   const settings = {
@@ -102,6 +110,15 @@ const ModalProject = ({close, id}) => {
         <p className={style.desc}>Se realiza refuerzo de zapatas y pedestales para una torre de 60 m de altura, mediante encamisado de cimentación con anclajes epóxicos (Anchorfix 4 SIKA®️) y adherencia de concreto viejo – nuevo (Sikadur 32 SIKA®️).
 Se realiza instalación de montantes de refuerzo con taburetes y cambio de diagonales hasta 45 m de altura perforando la estructura con taladro magnético, se ejecutó soldadura de cartabones para refuerzo.</p>
         <button className={style.button} onClick={close}>Cerrar</button>
+        <Slider {...settings}>
+          <div className={style.imgContainer}><img className={style.imgC} src={r1}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r2}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r3}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r5}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r6}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={r7}></img></div>
+        </Slider>
       </div>
     </div>}
     {id === 5 && <div className={style.modalContainer}>
