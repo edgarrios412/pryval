@@ -8,6 +8,7 @@ import castillo from "../../../assets/castillo/5.jpeg"
 import cafam from "../../../assets/cafam/5.jpeg"
 import guaviare from "../../../assets/guaviare/2.jpeg"
 import terraza from "../../../assets/terraza/6.jpeg"
+import refuerzo from "../../../assets/refuerzo/2.jpeg"
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion} from 'framer-motion';
 import { useEffect } from 'react';
@@ -58,7 +59,7 @@ const Projects = () => {
         <button className={style.button} onClick ={() => setProjectId(3)}>Más información</button>
         </div>
         <div className={style.project}>
-        <img src={example} className={style.img}/>
+        <img src={refuerzo} className={style.img}/>
         <h3 className={style.title}>REFUERZO DE CIMENTACION Y TORRE</h3>
         <button className={style.button} onClick ={() => setProjectId(4)}>Más información</button>
         </div>
