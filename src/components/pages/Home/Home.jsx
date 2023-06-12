@@ -1,6 +1,6 @@
 import style from './Home.module.css'
 import {Element} from "react-scroll" 
-import fondo from "../../../assets/fondo.jpg"
+import fondo from "../../../assets/fondo.jpeg"
 
 const Home = () => {
   return(

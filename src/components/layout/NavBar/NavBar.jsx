@@ -13,7 +13,7 @@ const NavBar = () => {
         <Link to="proyectos" smooth={true} duration={500}><li className={style.li}>Proyectos</li></Link>
         <Link to="servicios" smooth={true} duration={500}><li className={style.li}>Servicios</li></Link>
         <Link to="clientes" smooth={true} duration={500}><li className={style.li}>Clientes</li></Link>
-        <Link to="contactanos" smooth={true} duration={500}><li className={style.libutton}>Contactanos</li></Link>
+        <Link to="contactanos" smooth={true} duration={500}><li className={style.libutton}>Contáctanos</li></Link>
       </ul>
     </nav>
   )
