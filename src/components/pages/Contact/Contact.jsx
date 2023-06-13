@@ -6,13 +6,25 @@ import { Toaster, toast } from 'react-hot-toast';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation,motion } from 'framer-motion';
 import { useEffect } from 'react';
+import { useRef } from 'react';
 
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mdovrwop");
+  const rname = useRef()
+  const rservice = useRef()
+  const rmail = useRef()
+  const rtel = useRef()
+  const rmsg = useRef()
   if (state.succeeded) {
       toast.success("Email enviado satisfactoriamente");
+      rtel.current.value = ""
+    rmsg.current.value = ""
+    rservice.current.value = ""
+    rname.current.value = ""
+    rmail.current.value = ""
   }
+
 
   const {ref, inView} = useInView({
     // threshold:0.1
@@ -70,14 +82,14 @@ const Contact = () => {
         </div>
         <form onSubmit={handleSubmit} method="POST" className={style.formContacto}>
           <div className={style.divisores}>
-          <input className={style.input} name="nombre" placeholder="Nombre"/>
-          <input className={style.input} name="telefono" placeholder="Telefono"/>
+          <input className={style.input} ref={rname} name="nombre" placeholder="Nombre"/>
+          <input className={style.input} ref={rtel} name="telefono" placeholder="Telefono"/>
           </div>
           <div className={style.divisores}>
-          <input className={style.input} name="correo" placeholder="Correo"/>
-          <input className={style.input} name="servicio" placeholder="Tipo de servicio que require"/>
+          <input className={style.input} ref={rmail} name="correo" placeholder="Correo"/>
+          <input className={style.input} ref={rservice} name="servicio" placeholder="Tipo de servicio que require"/>
           </div>
-          <textarea className={style.inputsms} name="mensaje" placeholder="Mensaje"/>
+          <textarea className={style.inputsms} ref={rmsg} name="mensaje" placeholder="Mensaje"/>
           <button type="submit" className={style.button}>Enviar</button>
         </form>
       </div>

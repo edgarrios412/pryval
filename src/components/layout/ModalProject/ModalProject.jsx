@@ -149,7 +149,7 @@ JGVR Simón Bolívar C 195m por línea, instalación de postes y transformador
     </div>}
     {id === 6 && <div className={style.modalContainer}>
     <div className={style.modal}>
-        <h2 className={style.title}>MANTENIMIENTOS CAFAM</h2>
+        <h2 className={style.title}>MANTENIMIENTOS CORRECTIVOS Y PREVENTIVOS</h2>
         <h5 className={style.cliente}>Cliente: CAFAM</h5>
         <p className={style.desc}>Ejecución de correctivos de obra blanca e instalaciones eléctricas en las diferentes droguerías Cafam de Villavicencio:
 
@@ -182,10 +182,10 @@ Instalación de equipos y adecuaciones eléctricas</p>
         {/* <h5 className={style.cliente}>Cliente: Pendiente</h5> */}
         <p className={style.desc}>Se realizó el diseño de ingeniería básica del parque solar Pradera ubicado en el municipio de Barrancabermeja – Santander, con una capacidad de generación de energía renovable de 40 MW en un área de 150 ha, adicional a esto, se realizó el diseño de la subestación de llegada y salida junto con la línea de transmisión de una longitud de 9.5 km.</p>
         <Slider {...settings}>
-          <div className={style.imgContainer}><img className={style.imgC} src={s1}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={s2}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={s3}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={s4}></img></div>
+          <div className={style.imgContainer}><img className={style.imgC} src={s1}></img></div>
         </Slider>
         <button className={style.button} onClick={close}>Cerrar</button>
       </div>

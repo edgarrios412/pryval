@@ -9,7 +9,7 @@ import cafam from "../../../assets/cafam/5.jpeg"
 import guaviare from "../../../assets/guaviare/2.jpeg"
 import terraza from "../../../assets/terraza/6.jpeg"
 import refuerzo from "../../../assets/refuerzo/2.jpeg"
-import solar from "../../../assets/solar/s1.jpeg"
+import solar from "../../../assets/solar/s2.jpeg"
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion} from 'framer-motion';
 import { useEffect } from 'react';
@@ -71,7 +71,7 @@ const Projects = () => {
         </div>
         <div onClick ={() => setProjectId(6)} className={style.project}>
         <img src={cafam} className={style.img}/>
-        <h3 className={style.title}>MANTENIMIENTOS CAFAM</h3>
+        <h3 className={style.title}>MANTENIMIENTOS CORRECTIVOS Y PREVENTIVOS</h3>
         <button className={style.button}>Más información</button>
         </div>
         <div onClick ={() => setProjectId(7)} className={style.project}>
