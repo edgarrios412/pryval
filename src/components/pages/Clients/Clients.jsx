@@ -92,7 +92,7 @@ const Clients = () => {
         <img src={qmc} className={style.img}></img>
         </div>
         <div className={style.client}>
-        <img style={{backgroundColor:"white"}}src={ingemec} className={style.img}></img>
+        <img style={{backgroundColor:"black"}}src={ingemec} className={style.imgingemec}></img>
         </div>
         <div className={style.client}>
         <img src={viridi} className={style.imgviridi}></img>

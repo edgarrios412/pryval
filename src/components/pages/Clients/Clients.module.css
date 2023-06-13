@@ -31,6 +31,15 @@
     background-color: black;
 }
 
+.imgingemec{
+    display: flex;
+    margin: 0 auto;
+    /* height: 150px; */
+    width: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .imgviridi{
     display: flex;
     margin: 0 auto;
