@@ -64,7 +64,7 @@ const ModalProject = ({close, id}) => {
         <h2 className={style.title}>TORRE AUTOSOPORTADA DE 60 M</h2>
         <h5 className={style.cliente}>Cliente: JCP - TIGO</h5>
         <p className={style.desc}> Construcción de RBS con torre triangular de 60m, cimentación, montaje y pintura de torre, sistema de puesta a tierra, cerramiento en malla eslabonada de 18x12m, acabado final, muro de contención, estabilización de taludes norte y laterales, cunetas. 
-        <br></br>Ubicación: El Castillo - Meta</p>
+        <br></br><b>Ubicación: El Castillo - Meta</b></p>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={c1}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={c2}></img></div>
@@ -80,7 +80,7 @@ const ModalProject = ({close, id}) => {
         <h2 className={style.title}>ROOFTOP CON MÁSTIL DE 4 M</h2>
         <h5 className={style.cliente}>Cliente: WOM</h5>
         <p className={style.desc}>Construcción de RBS con mástil de 4m doble anillo anclado e impermeabilizado en terraza de edificación de 4 pisos, cumplimiento de RETIE para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras {"(SPT)"}, cambio de gabinete a 6 cuentas y su respectivo cerramiento de 3.00m x 3.00m en malla eslabonada y postes galvanizados. 
-        <br></br>Ubicación: Soacha - Cundinamarca</p>
+        <br></br><b>Ubicación: Soacha - Cundinamarca</b></p>
         <Slider {...settings}>
         <div className={style.imgContainer}><img className={style.imgC} src={t6}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={t1}></img></div>
@@ -97,7 +97,7 @@ const ModalProject = ({close, id}) => {
         <h2 className={style.title}>MONOPOLO 21 M</h2>
         <h5 className={style.cliente}>Cliente: WOM</h5>
         <p className={style.desc}>Construcción de RBS con monopolo de 21m, cimentación, izaje y ensamblaje del monopolo mediante grúa, cumplimiento de RETIE para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras {"(SPT)"}, cerramiento de 3.00m x 3.00m en malla eslabonada con concertina y postes galvanizados. 
-        <br></br>Ubicación: Paz de Ariporo - Casanare</p>
+        <br></br><b>Ubicación: Paz de Ariporo - Casanare</b></p>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={a1}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={a2}></img></div>
@@ -112,7 +112,7 @@ const ModalProject = ({close, id}) => {
     <div className={style.modal}>
         <h2 className={style.title}>REFUERZO DE CIMENTACION Y TORRE</h2>
         <h5 className={style.cliente}>Cliente: Claro</h5>
-        <p className={style.desc}>Se realiza refuerzo de zapatas y pedestales para una torre de 60 m de altura, mediante encamisado de cimentación con anclajes epóxicos (Anchorfix 4 SIKA®️) y adherencia de concreto viejo – nuevo (Sikadur 32 SIKA®️).
+        <p className={style.desc}>Se realiza refuerzo de zapatas y pedestales para una torre de 60 m de altura, mediante encamisado de cimentación con anclajes epóxicos {"(Anchorfix 4 SIKA®️)"} y adherencia de concreto viejo {"–"} nuevo {"(Sikadur 32 SIKA®️)"}.
 Se realiza instalación de montantes de refuerzo con taburetes y cambio de diagonales hasta 45 m de altura perforando la estructura con taladro magnético, se ejecutó soldadura de cartabones para refuerzo.</p>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={r1}></img></div>
@@ -132,7 +132,7 @@ Se realiza instalación de montantes de refuerzo con taburetes y cambio de diago
         <h5 className={style.cliente}>Cliente: WOM</h5>
         <p className={style.desc}>Construcción de red de media tensión y transformación a baja tensión en las dos RBS en la vereda simón bolívar del municipio de San José del Guaviare, con longitudes de 195 m y 85 m en JGVR Simón Bolívar y JGVR Simón Bolívar C respectivamente, proyecto entregado con certificación RETIE. 
 
-<br></br>Ubicación: San José del Guaviare - Guaviare</p>
+<br></br><b>Ubicación: San José del Guaviare - Guaviare</b></p>
 <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={g1}></img></div>
           <div className={style.imgContainer}><img className={style.imgC} src={g2}></img></div>
