@@ -23,6 +23,10 @@
   position: relative;
 }
 
+.modal p{
+  text-align: justify;
+}
+
 .title{
 text-align: center;
 }

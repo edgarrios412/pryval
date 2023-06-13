@@ -63,7 +63,7 @@ const ModalProject = ({close, id}) => {
       <div className={style.modal}>
         <h2 className={style.title}>TORRE AUTOSOPORTADA DE 60 M</h2>
         <h5 className={style.cliente}>Cliente: JCP - TIGO</h5>
-        <p className={style.desc}>Construcción de la estación para la Torre Triangular de 60m, Cimentación, Montaje y Pintura de Torre, Sistema de puesta a tierra, Cosite, Cerramiento en malla eslabonada de 18x12m, acabado final, Muro de contención, Estabilización de taludes Norte y laterales, Cunetas. 
+        <p className={style.desc}> Construcción de RBS con torre triangular de 60m, cimentación, montaje y pintura de torre, sistema de puesta a tierra, cerramiento en malla eslabonada de 18x12m, acabado final, muro de contención, estabilización de taludes norte y laterales, cunetas. 
         <br></br>Ubicación: El Castillo - Meta</p>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={c1}></img></div>
@@ -79,7 +79,7 @@ const ModalProject = ({close, id}) => {
     <div className={style.modal}>
         <h2 className={style.title}>ROOFTOP CON MÁSTIL DE 4 M</h2>
         <h5 className={style.cliente}>Cliente: WOM</h5>
-        <p className={style.desc}>Ejecución de obra civil y eléctrica para un mástil de 4m doble anillo anclado e impermeabilizado en terraza de edificación de 4 pisos, con las instalaciones reglamentarias para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras (SPT), cambio de gabinete a 6 cuentas y su respectivo cerramiento de 3.00m x 3.00m en malla eslabonada y postes galvanizados.
+        <p className={style.desc}>Construcción de RBS con mástil de 4m doble anillo anclado e impermeabilizado en terraza de edificación de 4 pisos, cumplimiento de RETIE para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras {"(SPT)"}, cambio de gabinete a 6 cuentas y su respectivo cerramiento de 3.00m x 3.00m en malla eslabonada y postes galvanizados. 
         <br></br>Ubicación: Soacha - Cundinamarca</p>
         <Slider {...settings}>
         <div className={style.imgContainer}><img className={style.imgC} src={t6}></img></div>
@@ -96,7 +96,7 @@ const ModalProject = ({close, id}) => {
     <div className={style.modal}>
         <h2 className={style.title}>MONOPOLO 21 M</h2>
         <h5 className={style.cliente}>Cliente: WOM</h5>
-        <p className={style.desc}>Ejecución de obra civil y eléctrica para monopolo de 21m, comenzando por la cimentación de acuerdo al diseño estructural y de suelos, izaje y ensamblaje del monopolo mediante grúa, instalaciones respectivas para recorrido de acometida y fibra óptica, sistema de puesta a tierras, cerramiento de 3.00m x 3.00m en malla eslabonada con concertina. La estructura está pintada con los colores y franjas reglamentarias de naranja y blanco exigidos por la Fuerza Aérea.
+        <p className={style.desc}>Construcción de RBS con monopolo de 21m, cimentación, izaje y ensamblaje del monopolo mediante grúa, cumplimiento de RETIE para acometida bifásica, recorrido de fibra óptica, sistema de puesta a tierras {"(SPT)"}, cerramiento de 3.00m x 3.00m en malla eslabonada con concertina y postes galvanizados. 
         <br></br>Ubicación: Paz de Ariporo - Casanare</p>
         <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={a1}></img></div>
@@ -130,11 +130,7 @@ Se realiza instalación de montantes de refuerzo con taburetes y cambio de diago
     <div className={style.modal}>
         <h2 className={style.title}>CONSTRUCCIÓN DE REDES DE M.T.</h2>
         <h5 className={style.cliente}>Cliente: WOM</h5>
-        <p className={style.desc}>Obras eléctricas para instalación de red de media tensión y transformación a baja tensión en las dos torres de telecomunicaciones ejecutadas en la vereda Simón Bolívar del municipio de San José del Guaviare. 
-Las longitudes de cada red son las siguientes respectivamente:
-
-JGVR Simón Bolívar B 84m por línea, instalación de postes y transformador
-JGVR Simón Bolívar C 195m por línea, instalación de postes y transformador
+        <p className={style.desc}>Construcción de red de media tensión y transformación a baja tensión en las dos RBS en la vereda simón bolívar del municipio de San José del Guaviare, con longitudes de 195 m y 85 m en JGVR Simón Bolívar y JGVR Simón Bolívar C respectivamente, proyecto entregado con certificación RETIE. 
 
 <br></br>Ubicación: San José del Guaviare - Guaviare</p>
 <Slider {...settings}>
@@ -151,21 +147,17 @@ JGVR Simón Bolívar C 195m por línea, instalación de postes y transformador
     <div className={style.modal}>
         <h2 className={style.title}>MANTENIMIENTOS CORRECTIVOS Y PREVENTIVOS</h2>
         <h5 className={style.cliente}>Cliente: CAFAM</h5>
-        <p className={style.desc}>Ejecución de correctivos de obra blanca e instalaciones eléctricas en las diferentes droguerías Cafam de Villavicencio:
-
-Cafam Éxito Centro: 
-Resane de humedad en paredes internas
-Cambio de lámparas LED en techo
-Cambio de luminarias en avisos de estantes
-
-Cafam Éxito Unicentro:
+        <p className={style.desc}>Ejecución de mantenimientos correctivos de obra blanca e instalaciones eléctricas en las diferentes droguerías Cafam de Villavicencio
+<br></br><br></br>
+<b>Cafam Éxito Centro: </b>
+Resane de humedad en paredes internas, cambio de lámparas LED en techo, cambio de luminarias en avisos de estantes
+<br></br>
+<b>Cafam Éxito Unicentro: </b>
 Cambio de lámparas LED en techo
 Mantenimiento de mobiliario interno
-
-Cafam Surtimayorista:
-Cambio de luminarias en letreros de estantes
-Mantenimiento de puerta de acceso
-Instalación de equipos y adecuaciones eléctricas</p>
+<br></br>
+<b>Cafam Surtimayorista: </b>
+Cambio de luminarias en letreros de estantes, mantenimiento de puerta de acceso, instalación de equipos y adecuaciones eléctricas</p>
 <Slider {...settings}>
           <div className={style.imgContainer}><img className={style.imgC} src={ca1}></img></div>
           {/* <div className={style.imgContainer}><img className={style.imgC} src={ca2}></img> */}
