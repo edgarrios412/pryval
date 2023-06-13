@@ -41,14 +41,16 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 35%, rgba(0, 0, 0, 0) 70%)
 }
 
 .sloganTop{
-    color: #00b2d1;
+    color: #05446a;
     font-size: 2em;
+    font-weight: 1000;
 }
 
 .sloganBottom{
     color: #05446a;
     font-size: 2em;
     margin-top: 0px;
+    font-weight: 1000;
 }
 
 .nombre{
