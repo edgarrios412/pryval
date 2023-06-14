@@ -38,7 +38,7 @@ import r3 from "../../../assets/refuerzo/3.jpeg"
 import r4 from "../../../assets/refuerzo/4.jpeg"
 import r5 from "../../../assets/refuerzo/5.jpeg"
 import r6 from "../../../assets/refuerzo/6.jpeg"
-import r7 from "../../../assets/refuerzo/6.jpeg"
+import r7 from "../../../assets/refuerzo/7.jpeg"
 
 import s1 from "../../../assets/solar/s1.jpeg"
 import s2 from "../../../assets/solar/s2.jpeg"
